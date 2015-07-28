@@ -54,5 +54,5 @@
     <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
     <gap:plugin name="nl.kingsquare.background-audio" version="1.0.0" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1" />
-    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.1" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0" />
 </widget>
