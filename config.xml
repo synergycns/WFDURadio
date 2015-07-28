@@ -17,18 +17,18 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-ldpi-icon.png" gap:density="ldpi"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-mdpi-icon.png" gap:density="mdpi"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-hdpi-icon.png" gap:density="hdpi"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-xhdpi-icon.png" gap:density="xhdpi"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-xxhdpi-icon.png" gap:density="xxhdpi"/>
-    <icon gap:platform="android" src="resources/android/icon/drawable-xxxhdpi-icon.png" gap:density="xxxhdpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-ldpi-screen.png" gap:density="port-ldpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-mdpi-screen.png" gap:density="port-mdpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-hdpi-screen.png" gap:density="port-hdpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-xhdpi-screen.png" gap:density="port-xhdpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-xxhdpi-screen.png" gap:density="port-xxhdpi"/>
-    <splash gap:platform="android" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" gap:density="port-xxxhdpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-ldpi-icon.png" gap:qualifier="ldpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-mdpi-icon.png" gap:qualifier="mdpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-hdpi-icon.png" gap:qualifier="hdpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-xhdpi-icon.png" gap:qualifier="xhdpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-xxhdpi-icon.png" gap:qualifier="xxhdpi"/>
+    <icon gap:platform="android" src="resources/android/icon/drawable-xxxhdpi-icon.png" gap:qualifier="xxxhdpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-ldpi-screen.png" gap:qualifier="port-ldpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-mdpi-screen.png" gap:qualifier="port-mdpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-hdpi-screen.png" gap:qualifier="port-hdpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-xhdpi-screen.png" gap:qualifier="port-xhdpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-xxhdpi-screen.png" gap:qualifier="port-xxhdpi"/>
+    <gap:splash gap:platform="android" src="resources/android/splash/drawable-port-xxxhdpi-screen.png" gap:qualifier="port-xxxhdpi"/>
     <icon gap:platform="ios" src="resources/ios/icon/icon.png" width="57" height="57"/>
     <icon gap:platform="ios" src="resources/ios/icon/icon@2x.png" width="114" height="114"/>
     <icon gap:platform="ios" src="resources/ios/icon/icon-40.png" width="40" height="40"/>
@@ -45,13 +45,14 @@
     <icon gap:platform="ios" src="resources/ios/icon/icon-small.png" width="29" height="29"/>
     <icon gap:platform="ios" src="resources/ios/icon/icon-small@2x.png" width="58" height="58"/>
     <icon gap:platform="ios" src="resources/ios/icon/icon-small@3x.png" width="87" height="87"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default-568h@2x~iphone.png" height="1136" width="640"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default-667h.png" height="1334" width="750"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default-736h.png" height="2208" width="1242"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default-Portrait@2x~ipad.png" height="2048" width="1536"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
-    <splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default-568h@2x~iphone.png" height="1136" width="640"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default-667h.png" height="1334" width="750"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default-736h.png" height="2208" width="1242"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default-Portrait@2x~ipad.png" height="2048" width="1536"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
+    <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
     <gap:plugin name="nl.kingsquare.background-audio" version="1.0.0" />
     <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1" />
+    <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.1" />
 </widget>
