@@ -1,0 +1,89 @@
+/* Empty. Add your own CSS if you like */
+
+.bar.bar-footer {
+    background-color: #ead49b;
+    border-top: solid #d2b875;
+    border-width: thin;
+}
+
+.bar.bar-stable {
+    background-color: #640000;
+}
+
+.button-donate {
+    background: #903805;
+    background-image: -webkit-linear-gradient(top, #903805, #460101);
+    background-image: -moz-linear-gradient(top, #903805, #460101);
+    background-image: -ms-linear-gradient(top, #903805, #460101);
+    background-image: -o-linear-gradient(top, #903805, #460101);
+    background-image: linear-gradient(to bottom, #903805, #460101);
+    border: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0px 15px 0px 15px !important;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.button-donate:hover {
+    color: #ffffff;
+}
+
+.center {
+    border: 1px solid red;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content-index {
+    background: url('../img/bg_main_lg.png') no-repeat center center fixed;
+    background-size: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.image-footer {
+    max-height: 90%;
+    padding-right: 7px;
+    padding-top: 7px;
+}
+
+.image-footer-logo{
+    padding-left: 15px;
+    padding-right: 30px;
+}
+
+.image-stream {
+    max-width: 100%;
+    padding-bottom: 10px;
+}
