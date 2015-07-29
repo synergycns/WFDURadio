@@ -34,47 +34,185 @@
     color: #ffffff;
 }
 
-.content-container {
-    transform: translateY(25%);
+.content-index {
+    background-color: #ece1c3;
 }
 
-.content-index {
-    background: url('../img/bg_main_lg.png') no-repeat center center fixed;
+.content-index-background {
+    opacity: 0;
+}
+
+.content-index-background-entered {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    -ms-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+}
+
+.content-index-container {
+    height: 100%;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    position: absolute;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 10;
 }
 
 .content-stream1 {
-    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center center fixed;
+    background-color: #000000;
+}
+
+.content-stream1-background {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.25s ease-out;
+    -moz-transition: opacity 0.25s ease-out;
+    -o-transition: opacity 0.25s ease-out;
+    -ms-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+}
+
+.content-stream1-background-entered {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center left fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    -ms-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+}
+
+.content-stream1-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     padding-left: 10px;
     padding-right: 10px;
     color: #FFFFFF;
+    z-index: 10;
 }
 
 .content-stream2 {
-    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top center fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color: #ece1c3;
 }
 
-.content-stream3 {
-    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center center fixed;
+.content-stream2-background {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.25s ease-out;
+    -moz-transition: opacity 0.25s ease-out;
+    -o-transition: opacity 0.25s ease-out;
+    -ms-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+}
+
+.content-stream2-background-entered {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top left fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    -ms-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+}
+
+.content-stream2-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     padding-left: 10px;
     padding-right: 10px;
+    z-index: 10;
+}
+
+
+.content-stream3 {
+    background-color: #000000;
+}
+
+.content-stream3-background {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.25s ease-out;
+    -moz-transition: opacity 0.25s ease-out;
+    -o-transition: opacity 0.25s ease-out;
+    -ms-transition: opacity 0.25s ease-out;
+    transition: opacity 0.25s ease-out;
+}
+
+.content-stream3-background-entered {
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center left fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
+    -webkit-transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    -ms-transition: opacity 0.25s ease-in;
+    transition: opacity 0.25s ease-in;
+}
+
+.content-stream3-container {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     color: #FFFFFF;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
 }
 
 .image-footer {
@@ -91,4 +229,8 @@
 .image-stream {
     max-width: 100%;
     padding-bottom: 10px;
+}
+
+.scroll {
+    height: 100%;
 }

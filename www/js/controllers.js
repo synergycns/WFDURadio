@@ -1,12 +1,31 @@
 angular.module('starter.controllers', [])
-    .controller('IndexCtrl', function() {
+    .controller('IndexCtrl', function($scope) {
 
         console.log('IndexCtrl');
+        $scope.sContentBackgroundCSSClass = 'content-index-background';
+
+        $scope.$on("$ionicView.enter", function() {
+            $scope.sContentBackgroundCSSClass = 'content-index-background-entered';
+        });
 
     })
     .controller('StreamCtrl', function($scope, $stateParams, $rootScope) {
 
         console.log('StreamCtrl: ' + $stateParams.streamId);
+        $scope.sContentCSSClass = 'content-stream' + $stateParams.streamId;
+        $scope.sContentBackgroundCSSClass = 'content-stream' + $stateParams.streamId + '-background';
+        $scope.sContentContainerCSSClass = 'content-stream' + $stateParams.streamId + '-container';
+        $scope.streamId = $stateParams.streamId;
+
+        $scope.$on("$ionicView.beforeLeave", function() {
+            console.log('VIEW LEAVING!');
+            $scope.sContentBackgroundCSSClass = 'content-stream' + $stateParams.streamId + '-background';
+        });
+
+        $scope.$on("$ionicView.enter", function() {
+            console.log('VIEW ENTERED!');
+            $scope.sContentBackgroundCSSClass = 'content-stream' + $stateParams.streamId + '-background-entered';
+        });
 
         var objStreamURLs = {
             1: 'http://peridot.streamguys.com:5350/iheart',
@@ -29,19 +48,13 @@ angular.module('starter.controllers', [])
         } else {
 
             $rootScope.audAudioPlayer = new Audio(objStreamURLs[$stateParams.streamId]);
-
             $rootScope.audAudioPlayer.addEventListener('playing', function() {
-
                 console.log('Playback started!');
                 $rootScope.isPlaying = true;
-
             });
 
             $rootScope.audAudioPlayer.play();
 
         }
-
-        $scope.streamId = $stateParams.streamId;
-        $scope.sContentClass = 'content-stream' + $stateParams.streamId;
 
     });
