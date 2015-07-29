@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-    .controller('IndexCtrl', function($scope) {
+    .controller('IndexCtrl', function() {
 
         console.log('IndexCtrl');
 
