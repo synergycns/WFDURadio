@@ -25,7 +25,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 14px;
-    padding: 0px 15px 0px 15px !important;
+    padding: 0 15px 0 15px !important;
     text-decoration: none;
     margin-top: 5px;
 }
@@ -35,11 +35,25 @@
 }
 
 .content-index {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
     background-color: #ece1c3;
 }
 
 .content-index-background {
     opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
 }
 
 .content-index-background-entered {
@@ -56,7 +70,6 @@
     -webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
     -o-transition: opacity 0.25s ease-in;
-    -ms-transition: opacity 0.25s ease-in;
     transition: opacity 0.25s ease-in;
 }
 
@@ -72,6 +85,9 @@
 }
 
 .content-stream1 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-color: #000000;
 }
 
@@ -82,11 +98,10 @@
     top: 0;
     left: 0;
     position: absolute;
-    -webkit-transition: opacity 0.25s ease-out;
-    -moz-transition: opacity 0.25s ease-out;
-    -o-transition: opacity 0.25s ease-out;
-    -ms-transition: opacity 0.25s ease-out;
-    transition: opacity 0.25s ease-out;
+    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center left fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
 }
 
 .content-stream1-background-entered {
@@ -103,7 +118,6 @@
     -webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
     -o-transition: opacity 0.25s ease-in;
-    -ms-transition: opacity 0.25s ease-in;
     transition: opacity 0.25s ease-in;
 }
 
@@ -120,6 +134,9 @@
 }
 
 .content-stream2 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-color: #ece1c3;
 }
 
@@ -130,11 +147,10 @@
     top: 0;
     left: 0;
     position: absolute;
-    -webkit-transition: opacity 0.25s ease-out;
-    -moz-transition: opacity 0.25s ease-out;
-    -o-transition: opacity 0.25s ease-out;
-    -ms-transition: opacity 0.25s ease-out;
-    transition: opacity 0.25s ease-out;
+    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top left fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
 }
 
 .content-stream2-background-entered {
@@ -151,7 +167,6 @@
     -webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
     -o-transition: opacity 0.25s ease-in;
-    -ms-transition: opacity 0.25s ease-in;
     transition: opacity 0.25s ease-in;
 }
 
@@ -168,6 +183,9 @@
 
 
 .content-stream3 {
+    height: 100%;
+    width: 100%;
+    position: absolute;
     background-color: #000000;
 }
 
@@ -178,11 +196,10 @@
     top: 0;
     left: 0;
     position: absolute;
-    -webkit-transition: opacity 0.25s ease-out;
-    -moz-transition: opacity 0.25s ease-out;
-    -o-transition: opacity 0.25s ease-out;
-    -ms-transition: opacity 0.25s ease-out;
-    transition: opacity 0.25s ease-out;
+    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center left fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
 }
 
 .content-stream3-background-entered {
@@ -199,15 +216,12 @@
     -webkit-transition: opacity 0.25s ease-in;
     -moz-transition: opacity 0.25s ease-in;
     -o-transition: opacity 0.25s ease-in;
-    -ms-transition: opacity 0.25s ease-in;
     transition: opacity 0.25s ease-in;
 }
 
 .content-stream3-container {
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     position: absolute;
     color: #FFFFFF;
     padding-left: 10px;
