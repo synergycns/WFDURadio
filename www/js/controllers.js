@@ -1,36 +1,7 @@
 angular.module('starter.controllers', [])
-    .controller('IndexCtrl', function($scope, $ImageCacheFactory, $cordovaSplashscreen) {
+    .controller('IndexCtrl', function($scope) {
 
         console.log('IndexCtrl');
-
-        $ImageCacheFactory.Cache([
-            'img/bg_main_lg.png',
-            'img/btn_stream1_lg.png',
-            'img/btn_stream2_lg.png',
-            'img/btn_stream3_lg.png'
-        ]).then(function() {
-            console.log('ALL IMAGES LOADED!');
-            $cordovaSplashscreen.hide();
-        });
-
-        // Handler for Stream 1 Play Button
-        $scope.streamHD1onClick = function () {
-            console.log('Play stream 1');
-            try {
-
-                var audStreamHD1 = new Audio('http://peridot.streamguys.com:5350/iheartclassical');
-                audStreamHD1.addEventListener("playing", function() {
-                    console.log('Playback started!');
-                });
-
-                audStreamHD1.play();
-
-            }
-            catch(e) {
-                console.error('Client does not support the Audio class!');
-            }
-
-        }
 
     })
     .controller('StreamCtrl', function($scope, $stateParams, $rootScope) {
