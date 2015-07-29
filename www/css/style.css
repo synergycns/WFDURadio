@@ -2,12 +2,13 @@
 
 .bar.bar-footer {
     background-color: #ead49b;
-    border-top: solid #d2b875;
-    border-width: thin;
+    border-style: solid none none none;
+    border-top: thin solid #d2b875;
 }
 
 .bar.bar-stable {
     background-color: #640000;
+    border: none;
 }
 
 .button-donate {
@@ -34,7 +35,6 @@
 }
 
 .center {
-    border: 1px solid red;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -67,13 +67,17 @@
 
 .content-index {
     background: url('../img/bg_main_lg.png') no-repeat center center fixed;
-    background-size: 100% 100%;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    background-size: contain;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .content-stream1 {
     background: #000000 url('../img/bg_stream1_lg.png') no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
     background-size: contain;
     padding-left: 10px;
     padding-right: 10px;
@@ -81,6 +85,8 @@
 
 .content-stream2 {
     background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
     background-size: contain;
     padding-left: 10px;
     padding-right: 10px;
@@ -88,6 +94,8 @@
 
 .content-stream3 {
     background: #000000 url('../img/bg_stream3_lg.png') no-repeat center center fixed;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
     background-size: contain;
     padding-left: 10px;
     padding-right: 10px;
