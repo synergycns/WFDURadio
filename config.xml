@@ -15,8 +15,8 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
-  <preference name="SplashScreenDelay" value="10000"/>
   <preference name="SplashScreen" value="screen"/>
+  <preference name="SplashScreenDelay" value="10000"/>
   <icon gap:platform="android" src="resources/android/icon/drawable-ldpi-icon.png" gap:qualifier="ldpi"/>
   <icon gap:platform="android" src="resources/android/icon/drawable-mdpi-icon.png" gap:qualifier="mdpi"/>
   <icon gap:platform="android" src="resources/android/icon/drawable-hdpi-icon.png" gap:qualifier="hdpi"/>
@@ -56,4 +56,27 @@
   <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" version="4.3.19"/>
   <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1"/>
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0"/>
+  <platform name="android">
+    <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
+    <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
+    <icon src="resources/android/icon/drawable-hdpi-icon.png" density="hdpi"/>
+    <icon src="resources/android/icon/drawable-xhdpi-icon.png" density="xhdpi"/>
+    <icon src="resources/android/icon/drawable-xxhdpi-icon.png" density="xxhdpi"/>
+    <icon src="resources/android/icon/drawable-xxxhdpi-icon.png" density="xxxhdpi"/>
+    <splash src="resources\android\splash\drawable-port-ldpi-screen.png" density="port-ldpi"/>
+    <splash src="resources\android\splash\drawable-port-mdpi-screen.png" density="port-mdpi"/>
+    <splash src="resources\android\splash\drawable-port-hdpi-screen.png" density="port-hdpi"/>
+    <splash src="resources\android\splash\drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
+    <splash src="resources\android\splash\drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
+    <splash src="resources\android\splash\drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
+  </platform>
+  <platform name="ios">
+    <splash src="resources\ios\splash\Default-568h@2x~iphone.png" width="640" height="1136"/>
+    <splash src="resources\ios\splash\Default-667h.png" width="750" height="1334"/>
+    <splash src="resources\ios\splash\Default-736h.png" width="1242" height="2208"/>
+    <splash src="resources\ios\splash\Default-Portrait@2x~ipad.png" width="1536" height="2048"/>
+    <splash src="resources\ios\splash\Default-Portrait~ipad.png" width="768" height="1024"/>
+    <splash src="resources\ios\splash\Default@2x~iphone.png" width="640" height="960"/>
+    <splash src="resources\ios\splash\Default~iphone.png" width="320" height="480"/>
+  </platform>
 </widget>
