@@ -58,7 +58,7 @@
     z-index: 10;
 }
 
-.content-stream1-background {
+.content-stream1 {
     background-color: #000000;
     background-image: url('../img/bg_stream1_lg.png');
     background-repeat: no-repeat;
@@ -83,7 +83,7 @@
     z-index: 10;
 }
 
-.content-stream2-background {
+.content-stream2 {
     background-color: #ece1c3;
     background-image: url('../img/bg_stream2_lg.png');
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@
     z-index: 10;
 }
 
-.content-stream3-background {
+.content-stream3 {
     background-color: #000000;
     background-image: url('../img/bg_stream3_lg.png');
     background-repeat: no-repeat;
