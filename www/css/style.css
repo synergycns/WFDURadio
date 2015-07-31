@@ -35,32 +35,15 @@
 }
 
 .content-index {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
     background-color: #ece1c3;
 }
 
 .content-index-background {
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.view-index-background {
-    background-color: #ece1c3;
     background-image: url('../img/bg_main_lg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -69,12 +52,10 @@
 
 .content-index-background-entered {
     opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left fixed;
+    background-image: url('../img/bg_main_lg.png');
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -107,12 +88,11 @@
 
 .content-stream1-background {
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center left fixed;
+    background-color: #000000;
+    background-image: url('../img/bg_stream1_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -121,12 +101,11 @@
 
 .content-stream1-background-entered {
     opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center left fixed;
+    background-color: #000000;
+    background-image: url('../img/bg_stream1_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -160,12 +139,11 @@
 
 .content-stream2-background {
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top left fixed;
+    background-color: #ece1c3;
+    background-image: url('../img/bg_stream2_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -174,12 +152,11 @@
 
 .content-stream2-background-entered {
     opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top left fixed;
+    background-color: #ece1c3;
+    background-image: url('../img/bg_stream2_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -213,12 +190,11 @@
 
 .content-stream3-background {
     opacity: 0;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center left fixed;
+    background-color: #000000;
+    background-image: url('../img/bg_stream3_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -227,12 +203,11 @@
 
 .content-stream3-background-entered {
     opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center left fixed;
+    background-color: #000000;
+    background-image: url('../img/bg_stream3_lg.png');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-attachment: fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
