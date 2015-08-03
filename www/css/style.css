@@ -55,7 +55,6 @@
     position: absolute;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 10;
 }
 
 .content-stream1 {
@@ -80,7 +79,6 @@
     padding-left: 10px;
     padding-right: 10px;
     color: #FFFFFF;
-    z-index: 10;
 }
 
 .content-stream2 {
@@ -104,7 +102,6 @@
     position: absolute;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 10;
 }
 
 .content-stream3 {
@@ -127,7 +124,6 @@
     color: #FFFFFF;
     padding-left: 10px;
     padding-right: 10px;
-    z-index: 10;
 }
 
 .image-footer {
@@ -136,16 +132,22 @@
     padding-top: 7px;
 }
 
-.image-footer-logo{
+.image-footer-logo {
     padding-left: 15px;
     padding-right: 30px;
 }
 
 .image-stream {
     max-width: 100%;
+    height: auto;
     padding-bottom: 10px;
 }
 
 .scroll {
     height: 100%;
+}
+
+.spinner svg {
+    stroke: #ffffff;
+    fill: #ffffff;
 }
