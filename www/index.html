@@ -36,8 +36,10 @@
     -->
     <ion-nav-view style="background-color: #ece1c3;"></ion-nav-view>
     <ion-footer-bar class="bar-footer">
-        <a ng-click="fnShareViaFacebook()"><img src="img/btn_facebook.png" class="image-footer-share"></a>
-        <a ng-click="fnShareViaTwitter()"><img src="img/btn_twitter.png" class="image-footer-share"></a>
+        <div>
+            <a href="" ng-click="fnShareViaFacebook()" class="button button-clear"><img src="img/btn_facebook.png" class="image-footer-share"></a>
+            <a href="" ng-click="fnShareViaTwitter()" class="button button-clear"><img src="img/btn_twitter.png" class="image-footer-share"></a>
+        </div>
         <div class="title">
             <img src="img/img_logo_footer.png" class="image-footer-logo">
         </div>
