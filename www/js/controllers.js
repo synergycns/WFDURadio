@@ -1,9 +1,5 @@
 angular.module('starter.controllers', [])
-    .controller('IndexCtrl', function() {
-
-        console.log('IndexCtrl');
-
-    })
+    .controller('IndexCtrl', function() { })
     .controller('StreamCtrl', function($scope, $stateParams, $rootScope, $http, $interval) {
 
         $scope.sContentCSSClass = 'content-stream' + $stateParams.streamId;
@@ -57,7 +53,7 @@ angular.module('starter.controllers', [])
                     .error(function (error) {
                         console.error('NowPlayingInfo Error: ' + error);
                     })
-            }
+            };
 
             // Get NowPlaying info
             fnNowPlaying();

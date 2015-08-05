@@ -23,7 +23,6 @@
     <!-- your app's js -->
     <script src="js/app.js"></script>
     <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
   </head>
   <body ng-app="starter">
     <ion-nav-bar class="bar-stable">
@@ -37,12 +36,12 @@
     -->
     <ion-nav-view style="background-color: #ece1c3;"></ion-nav-view>
     <ion-footer-bar class="bar-footer">
+        <a ng-click="fnShareViaFacebook()"><img src="img/btn_facebook.png" class="image-footer-share"></a>
+        <a ng-click="fnShareViaTwitter()"><img src="img/btn_twitter.png" class="image-footer-share"></a>
         <div class="title">
-            <a href="" ng-click="fnShareViaFacebook()"><img src="img/btn_facebook.png" class="image-footer"></a>
-            <a href="" ng-click="fnShareViaTwitter()"><img src="img/btn_twitter.png" class="image-footer"></a>
-            <img src="img/img_logo_footer.png" class="image-footer image-footer-logo">
-            <button onclick="window.open('http://secure.imodules.com/s/701/index.aspx?sid=701&gid=1&pgid=1443&cid=2658', '_system', 'location=yes'); return false;" class="button button-donate">Donate</button>
+            <img src="img/img_logo_footer.png" class="image-footer-logo">
         </div>
+        <button onclick="window.open('http://secure.imodules.com/s/701/index.aspx?sid=701&gid=1&pgid=1443&cid=2658', '_system', 'location=yes'); return false;" class="button button-donate">Donate</button>
     </ion-footer-bar>
   </body>
 </html>
