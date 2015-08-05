@@ -1,14 +1,14 @@
-/* Empty. Add your own CSS if you like */
-
 .bar.bar-footer {
     background-color: #ead49b;
     border-style: solid none none none;
     border-top: thin solid #d2b875;
+    height: 60px;
 }
 
 .bar.bar-stable {
     background-color: #640000;
     border: none;
+    height: 60px;
 }
 
 .button-donate {
@@ -19,37 +19,51 @@
     background-image: -o-linear-gradient(top, #903805, #460101);
     background-image: linear-gradient(to bottom, #903805, #460101);
     border: none;
-    -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-size: 14px;
-    padding: 0 15px 0 15px !important;
+    font-size: 14px !important;
+    padding: 1% 4% 4% 4% !important;
     text-decoration: none;
-    margin-top: 5px;
+    margin-top: 1%;
+    height: 80%;
 }
 
 .button-donate:hover {
     color: #ffffff;
 }
 
+.button-playback-control {
+    background: #903805;
+    background-image: -webkit-linear-gradient(top, #903805, #460101);
+    background-image: -moz-linear-gradient(top, #903805, #460101);
+    background-image: -ms-linear-gradient(top, #903805, #460101);
+    background-image: -o-linear-gradient(top, #903805, #460101);
+    background-image: linear-gradient(to bottom, #903805, #460101);
+    border: none;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 100px !important;
+    text-decoration: none;
+    margin-top: 1%;
+    height: 150px;
+    width: 150px;
+    padding-top: 10px;
+}
+
 .content-index {
-    background-color: #ece1c3;
-    background-image: url('../img/bg_main_lg.png');
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
+    background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left;
+    background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 .content-index-container {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
     top: 25%;
     left: 0;
     position: absolute;
@@ -57,77 +71,65 @@
     padding-right: 10px;
 }
 
-.content-stream1 {
-    background-color: #000000;
-    background-image: url('../img/bg_stream1_lg.png');
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-attachment: fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
+.content-stream {
+    width: 90%;
+    margin-left: 5%;
+    position: absolute;
+    bottom: 5%;
 }
 
-.content-stream1-container {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #FFFFFF;
+.content-stream1 {
+    background: #000000 url('../img/bg_stream1_lg.png') no-repeat 0 10%;
+    background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    -webkit-background-size: contain;
 }
 
 .content-stream2 {
-    background-color: #ece1c3;
-    background-image: url('../img/bg_stream2_lg.png');
-    background-repeat: no-repeat;
-    background-position: top left;
-    background-attachment: fixed;
-    -webkit-background-size: contain;
+    background: #ece1c3 url('../img/bg_stream2_lg.png') no-repeat top left;
+    background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    background-size: contain;
-}
-
-.content-stream2-container {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
+    -webkit-background-size: contain;
 }
 
 .content-stream3 {
-    background-color: #000000;
-    background-image: url('../img/bg_stream3_lg.png');
-    background-repeat: no-repeat;
-    background-position: center left;
-    background-attachment: fixed;
-    -webkit-background-size: contain;
+    background: #000000 url('../img/bg_stream3_lg.png') no-repeat top left;
+    background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
-    background-size: contain;
+    -webkit-background-size: contain;
 }
 
-.content-stream3-container {
-    opacity: 1;
-    height: 100%;
-    width: 100%;
-    position: absolute;
+.content-stream-controls-background {
+    padding: 2%;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: thin solid #000000;
+}
+
+.content-stream-controls {
+    text-align: center;
+}
+
+.content-stream-description {
+    margin-bottom: 1%;
+}
+
+.content-stream1-description {
     color: #FFFFFF;
-    padding-left: 10px;
-    padding-right: 10px;
+}
+
+.content-stream2-description {
+}
+
+.content-stream3-description {
+    color: #FFFFFF;
 }
 
 .image-footer {
-    max-height: 90%;
+    height: 90%;
     padding-right: 7px;
     padding-top: 7px;
 }
@@ -135,6 +137,20 @@
 .image-footer-logo {
     padding-left: 15px;
     padding-right: 30px;
+}
+
+.image-header-logo {
+    position: fixed;
+    top: -18px;
+    max-width: 50%;
+    height: auto;
+    z-index: 10;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 
 .image-stream {
@@ -150,4 +166,8 @@
 .spinner svg {
     stroke: #ffffff;
     fill: #ffffff;
+}
+
+.title {
+    height: 60px !important;
 }

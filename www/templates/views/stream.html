@@ -1,6 +1,18 @@
 <ion-view>
-  <ion-content ng-class="sContentCSSClass">
-      <div ng-class="sContentContainerCSSClass">
+  <ion-content ng-class="sContentCSSClass" scroll="false">
+      <div class="content-stream">
+          <div class="content-stream-description" ng-class="sContentDescriptionCSSClass">
+              <span style="font-size: 20px;">{{ sCurrentArtist }}</span><br />
+              <span style="font-size: 16px;">{{ sCurrentTrack }}</span>
+          </div>
+          <div class="content-stream-controls-background">
+              <div class="content-stream-controls">
+                  <div>
+                      <button class="icon ion-play button-playback-control" ng-click="fnPlay()" ng-if="$root.audAudioPlayer.paused"></button>
+                      <button class="icon ion-pause button-playback-control" ng-click="fnPause()" ng-if="!$root.audAudioPlayer.paused"></button>
+                  </div>
+              </div>
+          </div>
       </div>
   </ion-content>
 </ion-view>

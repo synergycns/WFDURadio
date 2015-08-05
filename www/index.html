@@ -15,7 +15,7 @@
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
       <script src="lib/SocialSharing.js"></script>
-
+      <script src="lib/x2js/xml2json.min.js"></script>
       <script src="lib/ngCordova/dist/ng-cordova.js"></script>
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
@@ -28,19 +28,20 @@
   <body ng-app="starter">
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button class="button-energized"></ion-nav-back-button>
+        <img src="img/img_logo_header.png" class="image-header-logo">
     </ion-nav-bar>
     <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    <ion-nav-view></ion-nav-view>
+    <ion-nav-view style="background-color: #ece1c3;"></ion-nav-view>
     <ion-footer-bar class="bar-footer">
         <div class="title">
-            <img src="img/btn_facebook.png" class="image-footer">
-            <img src="img/btn_twitter.png" class="image-footer">
+            <a href="" ng-click="fnShareViaFacebook()"><img src="img/btn_facebook.png" class="image-footer"></a>
+            <a href="" ng-click="fnShareViaTwitter()"><img src="img/btn_twitter.png" class="image-footer"></a>
             <img src="img/img_logo_footer.png" class="image-footer image-footer-logo">
-            <button class="button button-donate">Donate</button>
+            <button onclick="window.open('http://secure.imodules.com/s/701/index.aspx?sid=701&gid=1&pgid=1443&cid=2658', '_system', 'location=yes'); return false;" class="button button-donate">Donate</button>
         </div>
     </ion-footer-bar>
   </body>

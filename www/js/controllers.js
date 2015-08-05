@@ -4,11 +4,20 @@ angular.module('starter.controllers', [])
         console.log('IndexCtrl');
 
     })
-    .controller('StreamCtrl', function($scope, $stateParams, $rootScope, $ionicLoading) {
+    .controller('StreamCtrl', function($scope, $stateParams, $rootScope, $http, $interval) {
 
         $scope.sContentCSSClass = 'content-stream' + $stateParams.streamId;
-        $scope.sContentContainerCSSClass = 'content-stream' + $stateParams.streamId + '-container';
+        $scope.sContentDescriptionCSSClass = 'content-stream' + $stateParams.streamId + '-description';
         $scope.streamId = $stateParams.streamId;
+
+        var fnNowPlaying;
+        var ivlNowPlaying;
+
+        var objFeedURLs = {
+            1: 'http://wfdu.radioactivity.fm/feeds/last10.xml',
+            2: 'http://wfduhd2.radioactivity.fm/feeds/last10.xml',
+            3: 'http://wfduhd3.radioactivity.fm/feeds/last10.xml'
+        };
 
         var objStreamURLs = {
             1: 'http://peridot.streamguys.com:5350/iheart',
@@ -19,38 +28,58 @@ angular.module('starter.controllers', [])
         // Wait for the view to finish rendering
         $scope.$on('$ionicView.afterEnter', function(){
 
-            console.log('Stream View Entered');
-
-            if(($rootScope.audAudioPlayer && $rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) || !$rootScope.audAudioPlayer)
-            {
-                //$scope.isLoadingStream = true;
-                $ionicLoading.show({
-                    template: '<ion-spinner icon="ripple"></ion-spinner><br />Loading...'
-                });
-
-            }
-
-            if($rootScope.audAudioPlayer) {
-
-                console.log($rootScope.audAudioPlayer.src);
-
-                if($rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) {
-                    $rootScope.audAudioPlayer.src = objStreamURLs[$stateParams.streamId];
-                    $rootScope.audAudioPlayer.play();
-                }
-
-            } else {
-
-                $rootScope.audAudioPlayer = new Audio(objStreamURLs[$stateParams.streamId]);
-                $rootScope.audAudioPlayer.addEventListener('playing', function() {
-                    console.log('Playback started! %o', $scope);
-                    $ionicLoading.hide();
-                });
-
+            // Start playback (if needed)
+            if($rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) {
+                $rootScope.audAudioPlayer.src = objStreamURLs[$stateParams.streamId];
                 $rootScope.audAudioPlayer.play();
-
             }
+
+            // Setup the NowPlaying function
+            fnNowPlaying = function() {
+                $http.get(objFeedURLs[$stateParams.streamId])
+                    .success(function (data) {
+
+                        //console.log('NowPlayingInfo Received!');
+
+                        if (!$scope.oX2JS) {
+                            $scope.oX2JS = new X2JS();
+                        }
+
+                        var sJSONData = $scope.oX2JS.xml_str2json(data);
+                        $scope.sCurrentArtist = sJSONData.rss.channel.item[0].artist.toString();
+                        $scope.sCurrentTrack = sJSONData.rss.channel.item[0].track.toString();
+
+                        if(!ivlNowPlaying) {
+                            ivlNowPlaying = $interval(fnNowPlaying, 30000);
+                        }
+
+                    })
+                    .error(function (error) {
+                        console.error('NowPlayingInfo Error: ' + error);
+                    })
+            }
+
+            // Get NowPlaying info
+            fnNowPlaying();
 
         });
+
+        // Pause function
+        $scope.fnPause = function() {
+            if(!$rootScope.audAudioPlayer.paused) {
+                $rootScope.audAudioPlayer.pause();
+                $interval.cancel(fnNowPlaying);
+            }
+        };
+
+        // Play function
+        $scope.fnPlay = function() {
+            if($rootScope.audAudioPlayer.paused) {
+                if($rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) {
+                    $rootScope.audAudioPlayer.src = objStreamURLs[$stateParams.streamId];
+                }
+                $rootScope.audAudioPlayer.play();
+            }
+        }
 
     });

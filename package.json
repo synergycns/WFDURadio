@@ -1,5 +1,5 @@
 {
-  "name": "WFDU Radio",
+  "name": "WFDURadio",
   "version": "2.0.0",
   "description": "Live mobile streaming from WFDU Radio, Fairleigh Dickinson University",
   "dependencies": {
@@ -21,7 +21,8 @@
     "cordova-plugin-splashscreen",
     "com.ionic.keyboard",
     "cordova-plugin-statusbar",
-    "nl.x-services.plugins.socialsharing"
+    "nl.x-services.plugins.socialsharing",
+    "cordova-plugin-inappbrowser"
   ],
   "cordovaPlatforms": [
     {
