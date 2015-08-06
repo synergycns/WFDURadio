@@ -1,3 +1,7 @@
+.background, .background .pane, .background .item, .background .item-complex .item-content{
+    background-color: #ece1c3;
+}
+
 .bar.bar-footer {
     background-color: #ead49b;
     border-style: solid none none none;

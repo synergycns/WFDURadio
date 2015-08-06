@@ -119,7 +119,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 
     function _shareViaFacebook() {
         // Share
-        $cordovaSocialSharing.shareViaFacebookWithPasteMessageHint(strShareMessage, null, strShareURL, 'If you like, you can paste a message from your clipboard')
+        $cordovaSocialSharing.shareViaFacebook(strShareMessage, null, strShareURL)
             .then(function() {
                 console.log('Share (Fb) success!');
                 $ionicLoading.hide();
