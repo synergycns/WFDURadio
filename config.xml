@@ -16,6 +16,7 @@
   <preference name="android-minSdkVersion" value="16"/>
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreenDelay" value="10000"/>
+  <preference name="SplashScreen" value="splash" />
   <icon gap:platform="android" src="resources/android/icon/drawable-ldpi-icon.png" gap:qualifier="ldpi"/>
   <icon gap:platform="android" src="resources/android/icon/drawable-mdpi-icon.png" gap:qualifier="mdpi"/>
   <icon gap:platform="android" src="resources/android/icon/drawable-hdpi-icon.png" gap:qualifier="hdpi"/>
