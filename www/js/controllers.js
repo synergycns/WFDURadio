@@ -27,7 +27,7 @@ angular.module('starter.controllers', [])
             // Start playback (if needed)
             if($rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) {
                 $rootScope.audAudioPlayer.src = objStreamURLs[$stateParams.streamId];
-                $rootScope.audAudioPlayer.play();
+                $rootScope.audAudioPlayer.load();
             }
 
             // Setup the NowPlaying function
@@ -64,6 +64,8 @@ angular.module('starter.controllers', [])
         $scope.fnPause = function() {
             if(!$rootScope.audAudioPlayer.paused) {
                 $rootScope.audAudioPlayer.pause();
+                $rootScope.audAudioPlayer.src = '';
+                $rootScope.audAudioPlayer.load();
                 $interval.cancel(fnNowPlaying);
             }
         };
@@ -74,7 +76,7 @@ angular.module('starter.controllers', [])
                 if($rootScope.audAudioPlayer.src !== objStreamURLs[$stateParams.streamId]) {
                     $rootScope.audAudioPlayer.src = objStreamURLs[$stateParams.streamId];
                 }
-                $rootScope.audAudioPlayer.play();
+                $rootScope.audAudioPlayer.load();
             }
         }
 

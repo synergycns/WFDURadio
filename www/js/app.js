@@ -26,15 +26,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       $ionicLoading.hide();
     });
     $rootScope.audAudioPlayer.addEventListener('loadstart', function() {
-      $ionicLoading.show({
-        template: '<ion-spinner></ion-spinner><br />Loading...'
-      });
+        if($rootScope.audAudioPlayer.src.indexOf('streamguys') > -1) {
+            $ionicLoading.show({
+                template: '<ion-spinner></ion-spinner><br />Loading...'
+            });
+        }
     });
+      $rootScope.audAudioPlayer.addEventListener('canplay', function() {
+          if($rootScope.audAudioPlayer.src.indexOf('streamguys') > -1) {
+             $rootScope.audAudioPlayer.play();
+          }
+      });
     $rootScope.audAudioPlayer.addEventListener('error', function() {
-      $cordovaDialogs.alert('Playback error. Please try again.')
-          .then(function() {
-              $ionicLoading.hide();
-          })
+        if($rootScope.audAudioPlayer.src.indexOf('streamguys') > -1) {
+            $cordovaDialogs.alert('Playback error. Please try again.')
+                .then(function() {
+                    $ionicLoading.hide();
+                })
+        }
     });
 
     // Setup sharing
