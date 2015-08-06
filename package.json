@@ -22,7 +22,8 @@
     "com.ionic.keyboard",
     "cordova-plugin-statusbar",
     "nl.x-services.plugins.socialsharing",
-    "cordova-plugin-inappbrowser"
+    "cordova-plugin-inappbrowser",
+    "cordova-plugin-dialogs"
   ],
   "cordovaPlatforms": [
     {

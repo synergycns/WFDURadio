@@ -6,7 +6,7 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 
-.run(function($ionicPlatform, $rootScope, $ionicLoading, $cordovaSocialSharing) {
+.run(function($ionicPlatform, $rootScope, $ionicLoading, $cordovaSocialSharing, $cordovaDialogs) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
       });
     });
     $rootScope.audAudioPlayer.addEventListener('error', function() {
-      alert('Playback error. Please try again.');
+      $cordovaDialogs.alert('Playback error. Please try again.');
       $ionicLoading.hide();
     });
 
@@ -66,7 +66,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
             function() {
                 console.error('Facebook not found!!');
                 $ionicLoading.hide();
-                alert('Please install Facebook, or an app that will allow you to share content on Facebook, and try again!');
+                $cordovaDialogs.alert('Please install Facebook, or an app that will allow you to share content on Facebook, and try again!');
             });
 
     };
@@ -97,7 +97,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
             function() {
                 console.error('Twitter not found!');
                 $ionicLoading.hide();
-                alert('Please install Twitter, or an app that will allow you to share content on Twitter, and try again!');
+                $cordovaDialogs.alert('Please install Twitter, or an app that will allow you to share content on Twitter, and try again!');
             });
 
     };
