@@ -8,7 +8,7 @@
 .bar.bar-stable {
     background-color: #640000;
     border: none;
-    height: 60px;
+    height: 80px;
 }
 
 .button-donate {
@@ -32,6 +32,15 @@
     margin-top: 2px;
 }
 
+.button-donate:active {
+    background: #460101;
+    background-image: -webkit-linear-gradient(top, #460101, #903805);
+    background-image: -moz-linear-gradient(top, #460101, #903805);
+    background-image: -ms-linear-gradient(top, #460101, #903805);
+    background-image: -o-linear-gradient(top, #460101, #903805);
+    background-image: linear-gradient(to bottom, #460101, #903805);
+}
+
 .button-donate:hover {
     color: #ffffff;
 }
@@ -53,7 +62,19 @@
     margin-top: 1%;
     height: 150px;
     width: 150px;
-    padding-top: 8px;
+}
+
+.button-playback-control:active {
+    background: #460101;
+    background-image: -webkit-linear-gradient(top, #460101, #903805);
+    background-image: -moz-linear-gradient(top, #460101, #903805);
+    background-image: -ms-linear-gradient(top, #460101, #903805);
+    background-image: -o-linear-gradient(top, #460101, #903805);
+    background-image: linear-gradient(to bottom, #460101, #903805);
+}
+
+.button-playback-control:hover {
+    color: #ffffff;
 }
 
 .content-index {
@@ -139,13 +160,12 @@
 }
 
 .image-footer-share {
-    height: 100%;
+    height: 48px;
     padding-top: 2px;
 }
 
 .image-header-logo {
     position: absolute;
-    top: -18px;
     max-width: 50%;
     height: auto;
     z-index: 10;
