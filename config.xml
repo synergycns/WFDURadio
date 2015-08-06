@@ -56,7 +56,7 @@
   <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1"/>
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0"/>
   <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
-  <gap:plugin name="cordova-plugin-dialogs" source="npm" version="1.0.1" />
+  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
