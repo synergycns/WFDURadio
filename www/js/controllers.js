@@ -3,7 +3,6 @@ angular.module('starter.controllers', [])
     .controller('StreamCtrl', function($scope, $stateParams, $rootScope, $http, $interval) {
 
         $scope.sContentCSSClass = 'content-stream' + $stateParams.streamId;
-        $scope.sContentDescriptionCSSClass = 'content-stream' + $stateParams.streamId + '-description';
         $scope.streamId = $stateParams.streamId;
 
         var fnNowPlaying;

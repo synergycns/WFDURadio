@@ -1,18 +1,14 @@
-.background, .background .pane, .background .item, .background .item-complex .item-content{
-    background-color: #ece1c3;
-}
+
 
 .bar.bar-footer {
     background-color: #ead49b;
     border-style: solid none none none;
     border-top: thin solid #d2b875;
-    height: 60px;
 }
 
 .bar.bar-stable {
     background-color: #640000;
     border: none;
-    height: 80px;
 }
 
 .button-donate {
@@ -29,11 +25,10 @@
     border-radius: 8px;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffffff;
-    font-size: 16px !important;
-    padding: 5px 30px 5px 30px !important;
+    font-size: 14px !important;
+    padding: 1px 15px 5px 15px !important;
     text-decoration: none;
     height: 80%;
-    margin-top: 2px;
 }
 
 .button-donate:active {
@@ -61,11 +56,10 @@
     -webkit-border-radius: 50%;
     border-radius: 50%;
     color: #ffffff;
-    font-size: 100px !important;
+    font-size: 60px !important;
     text-decoration: none;
-    margin-top: 1%;
-    height: 150px;
-    width: 150px;
+    width: 75px;
+    height: 75px;
 }
 
 .button-playback-control:active {
@@ -87,25 +81,6 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
-}
-
-.content-index-container {
-    top: 50%;
-    position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-}
-
-.content-stream {
-    width: 90%;
-    margin-left: 5%;
-    position: absolute;
-    bottom: 5%;
 }
 
 .content-stream1 {
@@ -132,40 +107,13 @@
     -webkit-background-size: contain;
 }
 
-.content-stream-controls-background {
-    padding: 2%;
-    background: #FFFFFF;
-    border-radius: 10px;
-    border: thin solid #000000;
-}
-
-.content-stream-controls {
-    text-align: center;
-}
-
-.content-stream-description {
-    margin-bottom: 1%;
-}
-
-.content-stream1-description {
-    color: #FFFFFF;
-}
-
-.content-stream2-description {
-}
-
-.content-stream3-description {
-    color: #FFFFFF;
-}
-
 .image-footer-logo {
-    height: 100%;
-    padding: 7px;
+    height: 90%;
+    padding-top: 5px;
 }
 
 .image-footer-share {
-    height: 48px;
-    padding-top: 2px;
+    height: 33px;
 }
 
 .image-header-logo {
@@ -174,7 +122,6 @@
     height: auto;
     z-index: 10;
     margin-left: 50%;
-    top: -20px;
     transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -197,6 +144,58 @@
     fill: #ffffff;
 }
 
-.title {
-    height: 60px !important;
+.text-current-artist {
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.text-current-track {
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 600px) {
+
+    .button-playback-control {
+        background: #903805;
+        background-image: -webkit-linear-gradient(top, #903805, #460101);
+        background-image: -moz-linear-gradient(top, #903805, #460101);
+        background-image: -ms-linear-gradient(top, #903805, #460101);
+        background-image: -o-linear-gradient(top, #903805, #460101);
+        background-image: linear-gradient(to bottom, #903805, #460101);
+        border: none;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        color: #ffffff;
+        font-size: 100px !important;
+        text-decoration: none;
+        width: 125px;
+        height: 125px;
+    }
+
+    .image-header-logo {
+        position: absolute;
+        top: -10px;
+        width: 35%;
+        height: auto;
+        z-index: 10;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+    }
+
+    .text-current-artist {
+        color: #FFFFFF;
+        font-size: 32px;
+    }
+
+    .text-current-track {
+        color: #FFFFFF;
+        font-size: 24px;
+    }
+
 }
