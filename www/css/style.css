@@ -1,5 +1,3 @@
-
-
 .bar.bar-footer {
     background-color: #ead49b;
     border-style: solid none none none;
@@ -75,6 +73,13 @@
     color: #ffffff;
 }
 
+.container-stream-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 .content-index {
     background: #ece1c3 url('../img/bg_main_lg.png') no-repeat top left;
     background-size: cover;
@@ -84,7 +89,7 @@
 }
 
 .content-stream1 {
-    background: #000000 url('../img/bg_stream1_lg.png') no-repeat 0 10%;
+    background: #000000 url('../img/bg_stream1_lg.png') no-repeat center left;
     background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -100,7 +105,7 @@
 }
 
 .content-stream3 {
-    background: #000000 url('../img/bg_stream3_lg.png') no-repeat top left;
+    background: #000000 url('../img/bg_stream3_lg.png') no-repeat center left;
     background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;

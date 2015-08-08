@@ -65,7 +65,6 @@ angular.module('starter.controllers', [])
                 $rootScope.audAudioPlayer.pause();
                 $rootScope.audAudioPlayer.src = '';
                 $rootScope.audAudioPlayer.load();
-                $interval.cancel(fnNowPlaying);
             }
         };
 
