@@ -4,10 +4,11 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
+angular.module('starter', ['ionic','ionic.service.core','ionic.service.analytics', 'starter.controllers', 'ngCordova'])
 
-.run(function($ionicPlatform, $rootScope, $ionicLoading, $cordovaSocialSharing, $cordovaDialogs) {
+.run(function($ionicPlatform, $ionicAnalytics, $rootScope, $ionicLoading, $cordovaSocialSharing, $cordovaDialogs) {
   $ionicPlatform.ready(function() {
+    $ionicAnalytics.register();
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
     if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
@@ -47,8 +48,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
     });
 
     // Setup sharing
-    var strShareMessage = 'Check out WFDU Radio for 24/7 HD audio streaming from WFDU 89.1 FM!';
-    var strShareURL = 'http://www.wfdu.fm';
+    var strShareMessage = 'Check out wfdu.fm for three channels of 24/7 audio streaming from WFDU 89.1 FM HD!';
+    var strShareURL = 'http://wfdu.fm';
     var strAppName;
 
     // Setup Facebook sharing
@@ -119,7 +120,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngCordova'])
 
     function _shareViaFacebook() {
         // Share
-        $cordovaSocialSharing.shareViaFacebook(strShareMessage, null, strShareURL)
+        $cordovaSocialSharing.shareViaFacebookWithPasteMessageHint(strShareMessage, null, strShareURL)
             .then(function() {
                 console.log('Share (Fb) success!');
                 $ionicLoading.hide();
