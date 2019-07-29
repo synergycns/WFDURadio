@@ -54,7 +54,7 @@
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
   <plugin name="cordova-plugin-background-audio" spec="1.1.0" source="npm" />
-  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.7" source="npm" />
+  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.0" source="npm" />
   <plugin name="cordova-plugin-statusbar" spec="2.4.3" source="npm" />
   <plugin name="cordova-plugin-splashscreen" spec="5.0.3" source="npm" />
   <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" source="npm" />
