@@ -97,8 +97,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="59" column="75" lean-forward="false" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+            <state relative-caret-position="316">
+              <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -593,7 +593,7 @@
       <workItem from="1439519845197" duration="154000" />
       <workItem from="1444317817574" duration="89000" />
       <workItem from="1444320286410" duration="1277000" />
-      <workItem from="1564432167416" duration="2759000" />
+      <workItem from="1564432167416" duration="2853000" />
     </task>
     <task id="LOCAL-00001" summary="Add PGBuild directives to config">
       <created>1438109679315</created>
@@ -735,11 +735,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564434502653</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Update inappbrowser to use git">
+      <created>1564434947254</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1564434947254</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67942000" />
+    <option name="totallyTimeSpent" value="68036000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -820,7 +827,8 @@
     <MESSAGE value="Change background-audio to 1.1.0" />
     <MESSAGE value="Change socialsharing to 5.4.0" />
     <MESSAGE value="Update inappbrowser" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update inappbrowser" />
+    <MESSAGE value="Update inappbrowser to use git" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update inappbrowser to use git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1189,8 +1197,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="59" column="75" lean-forward="false" selection-start-line="59" selection-start-column="75" selection-end-line="59" selection-end-column="75" />
+        <state relative-caret-position="316">
+          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
           <folding />
         </state>
       </provider>
