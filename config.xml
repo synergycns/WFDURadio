@@ -54,11 +54,11 @@
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
   <plugin name="nl.kingsquare.background-audio" spec="1.0.1" source="pgb" />
-  <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
-  <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1"/>
-  <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0"/>
-  <gap:plugin name="cordova-plugin-inappbrowser" source="npm" version="1.0.1" />
-  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.10" />
+  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.7" source="pgb" />
+  <plugin name="cordova-plugin-statusbar" spec="2.4.4" source="pgb" />
+  <plugin name="cordova-plugin-splashscreen" spec="5.0.3" source="pgb" />
+  <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" source="pgb" />
+  <plugin name="cordova-plugin-dialogs" version="2.0.2" />
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
