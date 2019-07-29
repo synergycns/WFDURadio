@@ -97,8 +97,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+            <state relative-caret-position="316">
+              <caret line="60" column="71" lean-forward="true" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
               <folding />
             </state>
           </provider>
@@ -593,7 +593,7 @@
       <workItem from="1439519845197" duration="154000" />
       <workItem from="1444317817574" duration="89000" />
       <workItem from="1444320286410" duration="1277000" />
-      <workItem from="1564432167416" duration="1576000" />
+      <workItem from="1564432167416" duration="1713000" />
     </task>
     <task id="LOCAL-00001" summary="Add PGBuild directives to config">
       <created>1438109679315</created>
@@ -700,11 +700,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564433697348</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Update background audio plugin to 1.0.0">
+      <created>1564433759618</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1564433759618</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66759000" />
+    <option name="totallyTimeSpent" value="66896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -780,7 +787,8 @@
     <MESSAGE value="Add phonegap-version set to 6.5.0" />
     <MESSAGE value="Update all plugins" />
     <MESSAGE value="Update background audio plugin" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update background audio plugin" />
+    <MESSAGE value="Update background audio plugin to 1.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update background audio plugin to 1.0.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1149,8 +1157,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="55" column="60" lean-forward="false" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+        <state relative-caret-position="316">
+          <caret line="60" column="71" lean-forward="true" selection-start-line="60" selection-start-column="71" selection-end-line="60" selection-end-column="71" />
           <folding />
         </state>
       </provider>

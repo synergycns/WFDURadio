@@ -53,12 +53,12 @@
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
-  <plugin name="cordova-plugin-background-audio" spec="1.0.0" source="pgb" />
-  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.7" source="pgb" />
-  <plugin name="cordova-plugin-statusbar" spec="2.4.4" source="pgb" />
-  <plugin name="cordova-plugin-splashscreen" spec="5.0.3" source="pgb" />
-  <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" source="pgb" />
-  <plugin name="cordova-plugin-dialogs" version="2.0.2" />
+  <plugin name="cordova-plugin-background-audio" spec="1.0.1" source="npm" />
+  <plugin name="cordova-plugin-x-socialsharing" spec="5.4.7" source="npm" />
+  <plugin name="cordova-plugin-statusbar" spec="2.4.3" source="npm" />
+  <plugin name="cordova-plugin-splashscreen" spec="5.0.3" source="npm" />
+  <plugin name="cordova-plugin-inappbrowser" spec="3.1.0" source="npm" />
+  <plugin name="cordova-plugin-dialogs" version="2.0.2" source="npm" />
   <platform name="android">
     <icon src="resources/android/icon/drawable-ldpi-icon.png" density="ldpi"/>
     <icon src="resources/android/icon/drawable-mdpi-icon.png" density="mdpi"/>
