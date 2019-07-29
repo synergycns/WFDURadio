@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ddb776a-00c4-4e1c-a274-d603d17867af" name="Default" comment="Add phonegap-">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="8ddb776a-00c4-4e1c-a274-d603d17867af" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WFDU Hybrid.iml" afterPath="$PROJECT_DIR$/WFDU Hybrid.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.xml" afterPath="$PROJECT_DIR$/config.xml" />
     </list>
     <ignored path="WFDU Hybrid.iws" />
@@ -100,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="50" />
+              <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -595,7 +593,7 @@
       <workItem from="1439519845197" duration="154000" />
       <workItem from="1444317817574" duration="89000" />
       <workItem from="1444320286410" duration="1277000" />
-      <workItem from="1564432167416" duration="750000" />
+      <workItem from="1564432167416" duration="811000" />
     </task>
     <task id="LOCAL-00001" summary="Add PGBuild directives to config">
       <created>1438109679315</created>
@@ -667,11 +665,18 @@
       <option name="project" value="LOCAL" />
       <updated>1439319747334</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Add phonegap-version set to 6.0">
+      <created>1564432940563</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1564432940563</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65933000" />
+    <option name="totallyTimeSpent" value="65994000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -743,7 +748,8 @@
     <MESSAGE value="Add background images" />
     <MESSAGE value="Complete UI changes" />
     <MESSAGE value="Release build" />
-    <option name="LAST_COMMIT_MESSAGE" value="Release build" />
+    <MESSAGE value="Add phonegap-version set to 6.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add phonegap-version set to 6.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1113,7 +1119,7 @@
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="11" column="49" lean-forward="true" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="50" />
+          <caret line="11" column="52" lean-forward="false" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
           <folding />
         </state>
       </provider>
