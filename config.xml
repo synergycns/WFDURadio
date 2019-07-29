@@ -53,7 +53,7 @@
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default-Portrait~ipad.png" height="1024" width="768"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default@2x~iphone.png" height="960" width="640"/>
   <gap:splash gap:platform="ios" src="resources/ios/splash/Default~iphone.png" height="480" width="320"/>
-  <gap:plugin name="nl.kingsquare.background-audio" version="1.0.0"/>
+  <plugin name="nl.kingsquare.background-audio" spec="1.0.1" source="pgb" />
   <gap:plugin name="nl.x-services.plugins.socialsharing" source="plugins.cordova.io" />
   <gap:plugin name="cordova-plugin-statusbar" source="npm" version="1.0.1"/>
   <gap:plugin name="cordova-plugin-splashscreen" source="npm" version="2.1.0"/>
