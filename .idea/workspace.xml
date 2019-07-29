@@ -97,8 +97,8 @@
       <file leaf-file-name="config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="316">
-              <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+            <state relative-caret-position="180">
+              <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -593,7 +593,7 @@
       <workItem from="1439519845197" duration="154000" />
       <workItem from="1444317817574" duration="89000" />
       <workItem from="1444320286410" duration="1277000" />
-      <workItem from="1564432167416" duration="2853000" />
+      <workItem from="1564432167416" duration="2966000" />
     </task>
     <task id="LOCAL-00001" summary="Add PGBuild directives to config">
       <created>1438109679315</created>
@@ -742,11 +742,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564434947254</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Update inappbrowser to use 3.0.0">
+      <created>1564435037930</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1564435037930</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68036000" />
+    <option name="totallyTimeSpent" value="68149000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -828,7 +835,8 @@
     <MESSAGE value="Change socialsharing to 5.4.0" />
     <MESSAGE value="Update inappbrowser" />
     <MESSAGE value="Update inappbrowser to use git" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update inappbrowser to use git" />
+    <MESSAGE value="Update inappbrowser to use 3.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update inappbrowser to use 3.0.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1197,8 +1205,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="60" column="44" lean-forward="false" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+        <state relative-caret-position="180">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
           <folding />
         </state>
       </provider>
